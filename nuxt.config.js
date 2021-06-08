@@ -1,47 +1,64 @@
-import webpack from 'webpack';
+let webpack,
+  isCloud = false;
+
+// const isCloud = require("@layer0/core/environment").isCloud();
+
+// if (!isCloud) {
+//   webpack = require("webpack");
+// }
+
+try {
+  webpack = require("webpack");
+} catch (e) {
+  isCloud = true;
+  // will get here in the cloud
+}
 
 export default {
-  mode: 'universal',
+  mode: "universal",
   server: {
     port: 3000,
-    host: '0.0.0.0'
+    host: "0.0.0.0"
   },
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || "",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || ""
+      }
     ],
     link: [
-      { rel: 'icon',
-        type: 'image/x-icon',
-        href: '/favicon.ico'
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: "crossorigin"
       },
       {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com',
-        crossorigin: 'crossorigin'
+        rel: "preload",
+        href:
+          "https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700|Roboto:300,300i,400,400i,500,700&display=swap",
+        as: "style"
       },
       {
-        rel: 'preload',
-        href: 'https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700|Roboto:300,300i,400,400i,500,700&display=swap',
-        as: 'style'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700|Roboto:300,300i,400,400i,500,700&display=swap',
-        media: 'print',
-        onload: 'this.media=\'all\'',
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700|Roboto:300,300i,400,400i,500,700&display=swap",
+        media: "print",
+        onload: "this.media='all'",
         once: true
       }
     ],
     script: []
   },
-  loading: { color: '#fff' },
+  loading: { color: "#fff" },
   router: {
-    middleware: ['checkout'],
-    scrollBehavior (_to, _from, savedPosition) {
+    middleware: ["checkout"],
+    scrollBehavior(_to, _from, savedPosition) {
       if (savedPosition) {
         return savedPosition;
       } else {
@@ -51,111 +68,107 @@ export default {
   },
   buildModules: [
     // to core
-    '@nuxt/typescript-build',
-    '@nuxtjs/style-resources',
+    "@nuxt/typescript-build",
+    "@nuxtjs/style-resources",
     // to core soon
-    '@nuxtjs/pwa',
-    ['@vue-storefront/nuxt', {
-      useRawSource: {
-        dev: [
-          '@vue-storefront/commercetools',
-          '@vue-storefront/core'
-        ],
-        prod: [
-          '@vue-storefront/commercetools',
-          '@vue-storefront/core'
-        ]
+    "@nuxtjs/pwa",
+    [
+      "@vue-storefront/nuxt",
+      {
+        useRawSource: {
+          dev: ["@vue-storefront/commercetools", "@vue-storefront/core"],
+          prod: ["@vue-storefront/commercetools", "@vue-storefront/core"]
+        }
       }
-    }],
-    ['@vue-storefront/nuxt-theme'],
-    ['@vue-storefront/commercetools/nuxt', {
-      i18n: {
-        useNuxtI18nConfig: true
+    ],
+    ["@vue-storefront/nuxt-theme"],
+    [
+      "@vue-storefront/commercetools/nuxt",
+      {
+        i18n: {
+          useNuxtI18nConfig: true
+        }
       }
-    }]
+    ],
+    "nuxt-i18n",
+    "vue-scrollto/nuxt",
+    "cookie-universal-nuxt",
+    "@layer0/nuxt/module"
   ],
-  modules: [
-    'nuxt-i18n',
-    'cookie-universal-nuxt',
-    'vue-scrollto/nuxt',
-    '@vue-storefront/middleware/nuxt'
-  ],
+  modules: ["@vue-storefront/middleware/nuxt"],
   i18n: {
-    currency: 'USD',
-    country: 'US',
+    currency: "USD",
+    country: "US",
     countries: [
-      { name: 'US',
-        label: 'United States',
-        states: [
-          'California',
-          'Nevada'
-        ]
-      },
-      { name: 'AT',
-        label: 'Austria' },
-      { name: 'DE',
-        label: 'Germany' },
-      { name: 'NL',
-        label: 'Netherlands' }
+      { name: "US", label: "United States", states: ["California", "Nevada"] },
+      { name: "AT", label: "Austria" },
+      { name: "DE", label: "Germany" },
+      { name: "NL", label: "Netherlands" }
     ],
     currencies: [
-      { name: 'EUR',
-        label: 'Euro' },
-      { name: 'USD',
-        label: 'Dollar' }
+      { name: "EUR", label: "Euro" },
+      { name: "USD", label: "Dollar" }
     ],
     locales: [
       {
-        code: 'en',
-        label: 'English',
-        file: 'en.js',
-        iso: 'en'
+        code: "en",
+        label: "English",
+        file: "en.js",
+        iso: "en"
       },
       {
-        code: 'de',
-        label: 'German',
-        file: 'de.js',
-        iso: 'de'
+        code: "de",
+        label: "German",
+        file: "de.js",
+        iso: "de"
       }
     ],
-    defaultLocale: 'en',
+    defaultLocale: "en",
     lazy: true,
     seo: true,
-    langDir: 'lang/',
+    langDir: "lang/",
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: "en",
       numberFormats: {
         en: {
           currency: {
-            style: 'currency', currency: 'USD', currencyDisplay: 'symbol'
+            style: "currency",
+            currency: "USD",
+            currencyDisplay: "symbol"
           }
         },
         de: {
           currency: {
-            style: 'currency', currency: 'EUR', currencyDisplay: 'symbol'
+            style: "currency",
+            currency: "EUR",
+            currencyDisplay: "symbol"
           }
         }
       }
     },
     detectBrowserLanguage: {
-      cookieKey: 'vsf-locale'
+      cookieKey: "vsf-locale"
     }
   },
   styleResources: {
-    scss: [require.resolve('@storefront-ui/shared/styles/_helpers.scss', { paths: [process.cwd()] })]
+    scss: [
+      !isCloud &&
+        require.resolve("@storefront-ui/shared/styles/_helpers.scss", {
+          paths: [process.cwd()]
+        })
+    ]
   },
   build: {
-    transpile: [
-      'vee-validate/dist/rules'
-    ],
+    transpile: ["vee-validate/dist/rules"],
     plugins: [
-      new webpack.DefinePlugin({
-        'process.VERSION': JSON.stringify({
-          // eslint-disable-next-line global-require
-          version: require('./package.json').version,
-          lastCommit: process.env.LAST_COMMIT || ''
+      !isCloud &&
+        new webpack.DefinePlugin({
+          "process.VERSION": JSON.stringify({
+            // eslint-disable-next-line global-require
+            version: require("./package.json").version,
+            lastCommit: process.env.LAST_COMMIT || ""
+          })
         })
-      })
     ]
   }
 };
