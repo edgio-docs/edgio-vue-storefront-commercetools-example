@@ -1811,19 +1811,19 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@layer0/apollo@3.13.1-next-1623152176-9dd9ad24.0", "@layer0/apollo@^3.13.1-next-1623152176-9dd9ad24.0":
-  version "3.13.1-next-1623152176-9dd9ad24.0"
-  resolved "https://registry.yarnpkg.com/@layer0/apollo/-/apollo-3.13.1-next-1623152176-9dd9ad24.0.tgz#81a4396a38324b8d1fda279516ce4f042dc85476"
-  integrity sha512-Nejjd+gFA690ylseH7FsujhMp8KcSTHJEDqU7MI1rBGPv8UcOCb894QKpaVzP6kLiMwkTXYnfGld/ILZ6EfA1g==
+"@layer0/apollo@^3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@layer0/apollo/-/apollo-3.13.2.tgz#120fc899190e24fe78bfd954b55787756256b004"
+  integrity sha512-/m4Tz1UTKxWkc4p8ySejcJzjLJ+jb+FHqJF9E/37ydaszprTq57e26ATUj2+dF6khQTCrHmUVOuPflot2bC4BQ==
   dependencies:
     apollo-link-context "^1.0.20"
     apollo-link-http "^1.5.17"
     lz-string "^1.4.4"
 
-"@layer0/cli@3.13.1-next-1623152176-9dd9ad24.0":
-  version "3.13.1-next-1623152176-9dd9ad24.0"
-  resolved "https://registry.yarnpkg.com/@layer0/cli/-/cli-3.13.1-next-1623152176-9dd9ad24.0.tgz#a9cb3f789ef8a39a9eec7ffd013b037bcd81f470"
-  integrity sha512-SW2nbW+ViemOJEKgsPPmSnE+9pmP7l3ni3xb9V07S/VPBDr5aXI2Z11dkv1bjVvXvMX1Gya157Pjrlzv0bPE6w==
+"@layer0/cli@^3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@layer0/cli/-/cli-3.13.2.tgz#aca205d7cf217eb88b027767c4a122a6e353b7ae"
+  integrity sha512-hI7Cf/wQ/MeW7jE9QoQpC0dGKbrud8tVKTbk8pKi2cKdc1vkl/jJKGQTGaNtA9wn2z9gmbQD8fdFrTaxuYsVDw==
   dependencies:
     axios "^0.21.1"
     chalk "^2.4.2"
@@ -1855,10 +1855,10 @@
     yauzl "^2.10.0"
     yazl "^2.5.1"
 
-"@layer0/core@3.13.1-next-1623152176-9dd9ad24.0":
-  version "3.13.1-next-1623152176-9dd9ad24.0"
-  resolved "https://registry.yarnpkg.com/@layer0/core/-/core-3.13.1-next-1623152176-9dd9ad24.0.tgz#35c08059836b8f287e5afd385ff859bead08a5f6"
-  integrity sha512-lAiimMnN6zXbeFPcqx9XK0e75FNxyKqyywI+jRNxLCMI9WJZSe2sd7M3rqvcMetia8nc0ygLNFZcl3U5vVqufg==
+"@layer0/core@^3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@layer0/core/-/core-3.13.2.tgz#272b8dba742de2ebca7025f883e9941cc415ec81"
+  integrity sha512-P+y5r7wWYTFdqJ3A7xmvoY6I+dzXVzbb/dIAUYZrazgR/kQf7XyDtKrsX1q/kGEKKZSiYzDPMAxvtSHg6+nIEg==
   dependencies:
     "@babel/parser" "^7.13.15"
     "@babel/traverse" "^7.13.15"
@@ -1891,19 +1891,19 @@
     ts-loader "^8.2.0"
     uuid "^8.3.2"
 
-"@layer0/devtools@3.13.1-next-1623152176-9dd9ad24.0":
-  version "3.13.1-next-1623152176-9dd9ad24.0"
-  resolved "https://registry.yarnpkg.com/@layer0/devtools/-/devtools-3.13.1-next-1623152176-9dd9ad24.0.tgz#c2a6a3fc8213b098b4d67a0eb8ab0aec6a85a699"
-  integrity sha512-v+o/0CA+8OnIlK+gmzTYEokrvk8laDG+8eqD0B4y6cB2jw+DyP0oMNmRrUMbAQpkgaCSn+v2g5jhXzBvau8imQ==
+"@layer0/devtools@^3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@layer0/devtools/-/devtools-3.13.2.tgz#130819173c835e79a421007b4620d8ef1a1f4951"
+  integrity sha512-pYWVy/NvON0FCt7NrGXM5BCIGbO3s3B93jsA4DdFGEkAEovS+SKMkBLtWE4VktouJniIWpAq9gCj2OL9I52yjw==
   dependencies:
     clsx "^1.1.1"
     lodash "^4.17.20"
     sirv-cli "^1.0.0"
 
-"@layer0/nuxt@3.13.1-next-1623152176-9dd9ad24.0", "@layer0/nuxt@^3.13.1-next-1623152176-9dd9ad24.0":
-  version "3.13.1-next-1623152176-9dd9ad24.0"
-  resolved "https://registry.yarnpkg.com/@layer0/nuxt/-/nuxt-3.13.1-next-1623152176-9dd9ad24.0.tgz#6f5f9332653bbb8c6c6b7623ed266efe9e72312f"
-  integrity sha512-X3ZQTiqKj+AJy/dsolvvrJPUcE6QRiQEpv2fyp4oreRam7lJEG3b1VRb9FgzyETYGR/qxZtwumC3Og7MDUA0wQ==
+"@layer0/nuxt@^3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@layer0/nuxt/-/nuxt-3.13.2.tgz#24c712d8b7f31392b774a7a02d3129442ae20f6c"
+  integrity sha512-y1t8GEq7UZ8J1g8qDp539WTRy3Xwd9WNKbBdtjlJqRwBVUZLN/kouTwKTCMRyur8kb/S/6Zslwow0OuFNy6C0Q==
   dependencies:
     chalk "^3.0.0"
     content-type "^1.0.4"
@@ -1914,10 +1914,10 @@
     terminal-link "^2.1.1"
     workbox-webpack-plugin "^5.1.2"
 
-"@layer0/prefetch@3.13.1-next-1623152176-9dd9ad24.0":
-  version "3.13.1-next-1623152176-9dd9ad24.0"
-  resolved "https://registry.yarnpkg.com/@layer0/prefetch/-/prefetch-3.13.1-next-1623152176-9dd9ad24.0.tgz#1aef067516552c9f28143c3a29ce7e1fb2f81c6d"
-  integrity sha512-8/kvw0fhIqTUUUubj8pFmvuw+giL1/Ird8yYeVQfzoUGIBVQ6drfUY9t8ODx1kHGlITNpX41Zgh0h+G+5us8OA==
+"@layer0/prefetch@^3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@layer0/prefetch/-/prefetch-3.13.2.tgz#911caa622e27ebffb25cd6c3d7ba3b40e9a5e287"
+  integrity sha512-EXoHwQcUmxMYTvS5cVwRKwW+WsPoXDznzdMzwbzfAnC//7tKPOkiEQPjQmWRhWrwxJn8fW4HjZuCJGRT1g+oYw==
   dependencies:
     cheerio "^1.0.0-rc.3"
     json-query "^2.2.2"
@@ -1928,21 +1928,21 @@
     workbox-routing "^5.1.2"
     workbox-strategies "^5.1.2"
 
-"@layer0/vue-storefront@3.13.1-next-1623152176-9dd9ad24.0":
-  version "3.13.1-next-1623152176-9dd9ad24.0"
-  resolved "https://registry.yarnpkg.com/@layer0/vue-storefront/-/vue-storefront-3.13.1-next-1623152176-9dd9ad24.0.tgz#34dc0683ee4ceb085f8edbe2960e0cf3b56774ce"
-  integrity sha512-Vx2Ja3sjfChEDYyEEgwPvO3RjpjOc32gJjwZBwe+fRoNiaKnPOkqo3m7ZQSFV2EvR6TDym6wdfNIVnV9g0tmQA==
+"@layer0/vue-storefront@^3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@layer0/vue-storefront/-/vue-storefront-3.13.2.tgz#60db6cfc17acd769b08151a6592358cfa3987182"
+  integrity sha512-CLucFdGJhniWsd7pkHxQH5qn5PZ9dif49hQGttnTmAQUWPmksHO8fo5L3gHmQG8geiZYI0u4VNUwn93t+HZE2w==
   dependencies:
-    "@layer0/apollo" "^3.13.1-next-1623152176-9dd9ad24.0"
-    "@layer0/nuxt" "^3.13.1-next-1623152176-9dd9ad24.0"
+    "@layer0/apollo" "^3.13.2"
+    "@layer0/nuxt" "^3.13.2"
     cross-spawn "^7.0.3"
     fs-extra "^8.1.0"
     jscodeshift "^0.11.0"
 
-"@layer0/vue@3.13.1-next-1623152176-9dd9ad24.0":
-  version "3.13.1-next-1623152176-9dd9ad24.0"
-  resolved "https://registry.yarnpkg.com/@layer0/vue/-/vue-3.13.1-next-1623152176-9dd9ad24.0.tgz#594619efb4eebe6cc735fa211a3045cba7f22e85"
-  integrity sha512-r1O0MWr8KN0S6bbGrPgpq253d/AV4ej+UxDZKuQVWfPTosh7cA96zqeUaoIpW7kOclRTSDZKcCoKaLerumqhVw==
+"@layer0/vue@^3.13.2":
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/@layer0/vue/-/vue-3.13.2.tgz#a003f53eaa25a77c7a3ec320e4af5e33dcf56cdf"
+  integrity sha512-ybN947DJIocr7+tyFFWCwodwzutZQ0BADF21mTV/tJY6QKhbe/Q3TmgZ7+ikxHCWO1wZ6FiIViuw6o+wrDpfsw==
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
