@@ -1,7 +1,7 @@
 {
   "scripts": {
     "layer0:dev": "layer0 dev",
-    "layer0:build": "YALC=true layer0 build",
+    "layer0:build": "layer0 build",
     "layer0:deploy": "layer0 deploy",
     "dev": "nuxt",
     "build": "nuxt build -m",
@@ -14,7 +14,7 @@
     "test:e2e:generate:report": "yarn -s mochawesome-merge \"tests/e2e/report/*.json\" > \"tests/e2e/report.json\" && yarn -s marge tests/e2e/report.json -o \"tests/e2e/report\""
   },
   "name": "layer0-vue-storefront-commercetools-example",
-  "description": "My breathtaking Nuxt.js project",
+  "description": "Vue Storefront with CommerceTools",
   "author": "Filip Rakowski",
   "version": "1.2.0",
   "publishConfig": {
