@@ -1,18 +1,56 @@
 # Vue Storefront Layer0 Example
 
-This Vue Storefront app uses CommerceTools and is configured to deploy on Layer0. See it running [here](https://layer0-docs-layer0-vue-storefront-commercetools-example-default.layer0.link/).
+This Vue Storefront app uses CommerceTools and is configured to deploy on Layer0.
 
-## Build Setup
+## Demo
 
-``` bash
-# install dependencies
-$ yarn install
+https://layer0-docs-layer0-vue-storefront-commercetools-example-default.layer0.link/
 
-# serve with hot reload at localhost:3000
-$ layer0 dev
+## Try It Now
 
-# deploy to Layer 0
-$ layer0 deploy
+[![Deploy with Layer0](https://docs.layer0.co/button.svg)](https://app.layer0.co/deploy?repo=https://github.com/layer0-docs/layer0-vue-storefront-commercetools-example)
+
+## Getting Started
+
+### Clone This Repo
+
+Use `git clone https://github.com/layer0-docs/layer0-vue-storefront-commercetools-example.git` to get the files within this repository onto your local machine.
+
+### Install dependencies
+
+On the command line, in the project root directory, run the following command:
+
+```bash
+yarn install
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### Run the Next.js app locally on Layer0
+
+Run the Next.js app with the command:
+
+```bash
+npm run layer0:dev
+```
+
+Load the site: http://127.0.0.1:3000
+
+### Testing production build locally with Layer0
+
+You can do a production build of your app and test it locally using:
+
+```bash
+layer0 build && layer0 run --production
+```
+
+Setting --production runs your app exactly as it will be uploaded to the Layer0 cloud using serverless-offline.
+
+## Deploying to Layer0
+
+Deploying requires an account on Layer0. [Sign up here for free](https://app.layer0.co/signup). Once you have an account, you can deploy to Layer0 by running the following in the root folder of your project:
+
+```bash
+layer0 deploy
+```
+
+See [deploying](https://docs.layer0.co/guides/deploying) for more information.
+
