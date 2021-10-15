@@ -13,6 +13,8 @@ module.exports = {
   },
   includeNodeModules: true,
   includeFiles: {
-    "middleware.config.js": true
+    middleware: true,
+    "middleware.config.js": true,
+    "themeConfig.js": true
   }
 };
