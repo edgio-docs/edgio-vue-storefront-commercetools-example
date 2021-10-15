@@ -5,7 +5,7 @@
 # The site is deployed each time commits are pushed. The environment to which the changes are deployed
 # is based on the following rules:
 #
-# 1.) When pushing to master, changes will be deployed to the "default" environment. This environment does not exist
+# 1.) When pushing to master, changes will be deployed to the "default" environment. This environment exists
 #     by default. You must create it using https://app.layer0.co.
 # 2.) When pushing to any other branch, changes are deployed to the default environment. A unique URL is created based on the branch and deployment number.
 # 3.) When you publish a release in GitHub, the associated tag will be deployed to the production
@@ -58,7 +58,7 @@ jobs:
       - name: Deploy to Layer0
         run:
           npm run layer0:deploy -- ${{'--branch=$BRANCH_NAME' || ''}} --token=$LAYER0_DEPLOY_TOKEN
-          ${{github.event_name == 'push' && env.BRANCH_NAME == 'main' && '--environment=default' || ''}}
+          ${{github.event_name == 'push' && '--environment=default' || ''}}
           ${{github.event_name == 'release' && '--environment=production' || ''}}
         env:
           deploy_token: ${{secrets.LAYER0_DEPLOY_TOKEN}}
