@@ -1,17 +1,12 @@
-let webpack,
-  isCloud = false;
+import theme from "./themeConfig";
 
-// const isCloud = require("@layer0/core/environment").isCloud();
-
-// if (!isCloud) {
-//   webpack = require("webpack");
-// }
+let webpack;
+let isCloud = false;
 
 try {
   webpack = require("webpack");
 } catch (e) {
   isCloud = true;
-  // will get here in the cloud
 }
 
 export default {
@@ -72,9 +67,11 @@ export default {
     "@nuxtjs/style-resources",
     // to core soon
     "@nuxtjs/pwa",
+    ["@layer0/nuxt/module", { layer0SourceMaps: true }],
     [
       "@vue-storefront/nuxt",
       {
+        coreDevelopment: true,
         useRawSource: {
           dev: ["@vue-storefront/commercetools", "@vue-storefront/core"],
           prod: ["@vue-storefront/commercetools", "@vue-storefront/core"]
@@ -85,15 +82,12 @@ export default {
     [
       "@vue-storefront/commercetools/nuxt",
       {
-        i18n: {
-          useNuxtI18nConfig: true
-        }
+        i18n: { useNuxtI18nConfig: true }
       }
     ],
     "nuxt-i18n",
-    "vue-scrollto/nuxt",
     "cookie-universal-nuxt",
-    "@layer0/nuxt/module"
+    "vue-scrollto/nuxt"
   ],
   modules: ["@vue-storefront/middleware/nuxt"],
   i18n: {
@@ -110,18 +104,8 @@ export default {
       { name: "USD", label: "Dollar" }
     ],
     locales: [
-      {
-        code: "en",
-        label: "English",
-        file: "en.js",
-        iso: "en"
-      },
-      {
-        code: "de",
-        label: "German",
-        file: "de.js",
-        iso: "de"
-      }
+      { code: "en", label: "English", file: "en.js", iso: "en" },
+      { code: "de", label: "German", file: "de.js", iso: "de" }
     ],
     defaultLocale: "en",
     lazy: true,
@@ -158,7 +142,13 @@ export default {
         })
     ]
   },
+  publicRuntimeConfig: {
+    theme
+  },
   build: {
+    babel: {
+      plugins: [["@babel/plugin-proposal-private-methods", { loose: true }]]
+    },
     transpile: ["vee-validate/dist/rules"],
     plugins: [
       !isCloud &&
@@ -169,6 +159,32 @@ export default {
             lastCommit: process.env.LAST_COMMIT || ""
           })
         })
-    ]
+    ],
+    extend(config, ctx) {
+      if (ctx && ctx.isClient) {
+        config.optimization = {
+          ...config.optimization,
+          mergeDuplicateChunks: true,
+          splitChunks: {
+            ...config.optimization.splitChunks,
+            chunks: "all",
+            automaticNameDelimiter: ".",
+            maxSize: 128_000,
+            maxInitialRequests: Number.POSITIVE_INFINITY,
+            minSize: 0,
+            maxAsyncRequests: 10,
+            cacheGroups: {
+              vendor: {
+                test: /[/\\]node_modules[/\\]/,
+                name: module =>
+                  `${module.context
+                    .match(/[/\\]node_modules[/\\](.*?)([/\\]|$)/)[1]
+                    .replace(/[.@_]/gm, "")}`
+              }
+            }
+          }
+        };
+      }
+    }
   }
 };

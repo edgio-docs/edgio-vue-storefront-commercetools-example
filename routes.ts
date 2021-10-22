@@ -1,6 +1,10 @@
+// This file was added by layer0 init.
+// You should commit this file to source control.
+
 import { Router, ResponseWriter } from "@layer0/core/router";
 import { CacheOptions } from "@layer0/core/router/CacheOptions";
 import { nuxtRoutes, renderNuxtPage } from "@layer0/nuxt";
+import { decompressRequest } from "@layer0/apollo";
 
 const HTML: CacheOptions = {
   edge: {
@@ -11,7 +15,7 @@ const HTML: CacheOptions = {
   browser: false
 };
 
-const API: CacheOptions = {
+const APICacheOptions: CacheOptions = {
   edge: {
     maxAgeSeconds: 60 * 60 * 24,
     staleWhileRevalidateSeconds: 60 * 60 * 24,
@@ -38,9 +42,26 @@ export default new Router()
     serviceWorker(".nuxt/dist/client/service-worker.js");
   })
   .get("/", cacheHTML)
-  .post("/api/ct/getCategory", cacheAPI)
-  .post("/api/ct/getProduct", cacheAPI)
   .get("/c/:slug*", cacheHTML)
   .get("/p/:slug*", cacheHTML)
+  .post("/api/ct/getCategory", cacheAPI)
+  .post("/api/ct/getProduct", cacheAPI)
+  // @ts-ignore
+  .post("/:env/graphql", ({ proxy }) => {
+    proxy("api");
+  })
+  .get(
+    {
+      path: "/:env/graphql"
+    },
+    // @ts-ignore
+    ({ proxy, cache, removeUpstreamResponseHeader }) => {
+      cache(APICacheOptions);
+      proxy("api", {
+        transformRequest: decompressRequest
+      });
+      removeUpstreamResponseHeader("cache-control");
+    }
+  )
   .use(nuxtRoutes)
   .fallback(renderNuxtPage);

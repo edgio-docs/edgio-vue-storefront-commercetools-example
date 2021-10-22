@@ -24,12 +24,20 @@ On the command line, in the project root directory, run the following command:
 yarn install
 ```
 
-### Run the Next.js app locally on Layer0
+### Update CommerceTools credentials
 
-Run the Next.js app with the command:
+### Run the Vue StoreFront app locally on Layer0
+
+In `middleware.config.js` update the CommerceTools API settings to reflect your own values. The values currently in there are for a test store run by Layer0.
+
+We recommend that you leverage a `.env` file to inject your values to the `middleware.config.js`. Create a `.env` file from the `.env-example` file.
+
+To create a new API Client, log into your CommerceTools instance and go to `Settings > Developer settings > Create new API Client`. Enter a name for the API Client and select the "Mobile & Single-page PWA client" template. Make sure to also check the "View > Stores" option. Sometimes the templates change the auto-checked items, so double check your permissions match that of the current middleware file.
+
+Run the Vue Storefront app with the command:
 
 ```bash
-npm run layer0:dev
+yarn run layer0:dev
 ```
 
 Load the site: http://127.0.0.1:3000
@@ -52,5 +60,6 @@ Deploying requires an account on Layer0. [Sign up here for free](https://app.lay
 layer0 deploy
 ```
 
-See [deploying](https://docs.layer0.co/guides/deploying) for more information.
+Automate deployments using a [Github Action](https://docs.layer0.co/guides/deploying#section_github_actions).
 
+See [deploying](https://docs.layer0.co/guides/deploying) for more information.
