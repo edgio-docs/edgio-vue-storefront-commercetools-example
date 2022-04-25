@@ -31,7 +31,7 @@
   "devDependencies": {
     "@layer0/apollo": "^3.16.11",
     "@layer0/cli": "^3.16.11",
-    "@layer0/core": "^3.16.11",
+    "@layer0/core": "^3.17.8",
     "@layer0/devtools": "^3.16.11",
     "@layer0/nuxt": "^3.16.11",
     "@layer0/prefetch": "^3.16.11",
