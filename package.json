@@ -34,7 +34,7 @@
     "@layer0/core": "^3.16.11",
     "@layer0/devtools": "^3.16.11",
     "@layer0/nuxt": "^3.16.11",
-    "@layer0/prefetch": "^3.16.11",
+    "@layer0/prefetch": "^3.17.8",
     "@layer0/vue": "^3.16.11",
     "@layer0/vue-storefront": "^3.16.11",
     "@nuxt/types": "^0.7.9",
