@@ -2297,10 +2297,10 @@
     terminal-link "^2.1.1"
     workbox-webpack-plugin "^5.1.2"
 
-"@layer0/prefetch@^3.16.11":
-  version "3.16.11"
-  resolved "https://registry.npmjs.org/@layer0/prefetch/-/prefetch-3.16.11.tgz"
-  integrity sha512-+7Fqn4Xj1w6ojD1zeKRlM9g4v1CK/IkQhB1a4RpEOUuD84jVvWLfDjPoqozXFZuFP83dFdnV5byUxv3CoRN3CA==
+"@layer0/prefetch@^3.17.10":
+  version "3.17.10"
+  resolved "https://registry.yarnpkg.com/@layer0/prefetch/-/prefetch-3.17.10.tgz#788e34a25cbd22f49983992df5185fdc12efc33a"
+  integrity sha512-1cyVxa1RHiLjs0RUy5dRywODZfYKPGMG6vuKJU4Aw3wHwIbQO0u3tHeaO+nnekhtlwx7VPJ83gok7nYfBlGZoA==
   dependencies:
     cheerio "^1.0.0-rc.3"
     json-query "^2.2.2"
