@@ -2274,10 +2274,10 @@
     unixify "^1.0.0"
     uuid "^8.3.2"
 
-"@layer0/devtools@^3.16.11":
-  version "3.16.11"
-  resolved "https://registry.npmjs.org/@layer0/devtools/-/devtools-3.16.11.tgz"
-  integrity sha512-kgYI6+pvoZgk9Ylc1nWpfr0gyt/J9xrI26OrvlPv+fr8o98EGVBHmFbV91BnJGgX8pGoeDFTH8ZN0anu5RGpQg==
+"@layer0/devtools@^3.17.10":
+  version "3.17.10"
+  resolved "https://registry.yarnpkg.com/@layer0/devtools/-/devtools-3.17.10.tgz#af112aa65d58a6e7bd9e46eec92f050099d0652e"
+  integrity sha512-xrkr4kEKk9wdfkmz7RPOtkO4Q9h4Wt9mXT1XrzsFCJnTm1KJaVOXyUTjWwEY0q70edMMYAvKdkS2By5iFhSZ0Q==
   dependencies:
     clsx "^1.1.1"
     lodash "^4.17.20"
