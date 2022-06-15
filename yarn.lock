@@ -2507,10 +2507,10 @@
     yauzl "^2.10.0"
     yazl "^2.5.1"
 
-"@layer0/core@^4.13.9":
-  version "4.13.9"
-  resolved "https://registry.yarnpkg.com/@layer0/core/-/core-4.13.9.tgz#7707634b725c00cc783b8edab07bc17512d22b44"
-  integrity sha512-DQMybLOnstxtX6XDGgR2QaEFuGDEZpX/nDtk4QeiqjA8XS23+51dfhK2tIUFJx1rfKedYB1Hk7xnIVACQ7Jmpw==
+"@layer0/core@^4.13.16", "@layer0/core@^4.13.9":
+  version "4.13.16"
+  resolved "https://registry.yarnpkg.com/@layer0/core/-/core-4.13.16.tgz#6e9bfd1e6805b68071a2255c020243ab5792128a"
+  integrity sha512-GmU14iEIyPrn3vAtKl8cCmnrOtzb/zrCWRadbzdIwUfWMsc7OdDCpFdDI4dJAB9DZpqBo0U89inLeS31+uz7MA==
   dependencies:
     "@babel/parser" "^7.16.2"
     "@babel/traverse" "^7.16.0"
@@ -2570,12 +2570,12 @@
     terminal-link "^2.1.1"
     workbox-webpack-plugin "^5.1.2"
 
-"@layer0/prefetch@^4.13.9":
-  version "4.13.9"
-  resolved "https://registry.yarnpkg.com/@layer0/prefetch/-/prefetch-4.13.9.tgz#d1d75506a9da192340532d5c348d19d1a021d9a2"
-  integrity sha512-X1CibW4zz+7KUYhD8JZKDMMegZN+GISG1uH+hIMoe0nmfYZxuS6EiDFw2TlFRFiDHElJ0757yXwee2olw26OpA==
+"@layer0/prefetch@^4.13.16":
+  version "4.13.16"
+  resolved "https://registry.yarnpkg.com/@layer0/prefetch/-/prefetch-4.13.16.tgz#61e46e60e50ad15629733cc2264aac9c98b1b6d9"
+  integrity sha512-+EBAw5v9rUHafBF4gBJR56swUSTL3wD5Om/jDWK0pe+L9LUg/IQpYDcM2uYOsFwFc7H8SPFQrrbbWFb1ZN7ybQ==
   dependencies:
-    "@layer0/core" "^4.13.9"
+    "@layer0/core" "^4.13.16"
     cheerio "^1.0.0-rc.3"
     json-query "^2.2.2"
     workbox-cacheable-response "^5.1.2"
