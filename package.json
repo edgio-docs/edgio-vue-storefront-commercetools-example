@@ -36,7 +36,7 @@
     "@layer0/nuxt": "^4.13.9",
     "@layer0/prefetch": "^4.13.9",
     "@layer0/vue": "^4.13.9",
-    "@layer0/vue-storefront": "^4.13.9",
+    "@layer0/vue-storefront": "^4.14.0",
     "@nuxt/types": "^0.7.9",
     "@nuxtjs/pwa": "^3.2.2",
     "@storefront-ui/vue": "0.10.3",
