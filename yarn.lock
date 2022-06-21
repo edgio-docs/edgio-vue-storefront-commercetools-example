@@ -2456,10 +2456,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@layer0/apollo@^4.13.9":
-  version "4.13.9"
-  resolved "https://registry.yarnpkg.com/@layer0/apollo/-/apollo-4.13.9.tgz#dcf6a88a4441c613e45be318c5a11c521364b85e"
-  integrity sha512-8B45dfw38wxrcwAcndOxNqF96AV1oH2xhqrZHAJapYgMgrHrjTjPPKq1XOZjrkQ2ABF0DR3UuAAlIqV5FwoGsA==
+"@layer0/apollo@^4.13.9", "@layer0/apollo@^4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@layer0/apollo/-/apollo-4.15.0.tgz#738ede3ac7865e7aa5dbb6f3339f420514e40cd9"
+  integrity sha512-LJJgcb2JrdH6+JVATnbgUbwQY6vZ/J1YUa8Zp9L+9KUaDx2c+2vgqSNYMX0FmXBTXEzmD2cawoT28w8SxEhHbQ==
   dependencies:
     apollo-link-context "^1.0.20"
     apollo-link-http "^1.5.17"
@@ -2556,10 +2556,10 @@
     lodash "^4.17.20"
     sirv-cli "^1.0.0"
 
-"@layer0/nuxt@^4.13.9":
-  version "4.13.9"
-  resolved "https://registry.yarnpkg.com/@layer0/nuxt/-/nuxt-4.13.9.tgz#2ca1f79bbaf66190ec82e917939f34c26886a13b"
-  integrity sha512-WLnsaHVQGQZc4d2NHoaUcLqhdPHosW/SqB/iTi0WGGu7Io1z5jyHtsDvOxFcYWICShB/g1CN/fQeuUaBRndq0w==
+"@layer0/nuxt@^4.13.9", "@layer0/nuxt@^4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@layer0/nuxt/-/nuxt-4.15.0.tgz#a700519a629719a8e256407952750eadeefa6679"
+  integrity sha512-ChbVGLC4sn+gYXKWgnMIo8a5nRfQmeq5s9cj0uFvQYlIdqlepPbXqgbVOl3W7yWGRFXa2Aj1dyYProdKZbJEew==
   dependencies:
     chalk "^4.1.2"
     content-type "^1.0.4"
@@ -2585,13 +2585,13 @@
     workbox-routing "^5.1.2"
     workbox-strategies "^5.1.2"
 
-"@layer0/vue-storefront@^4.13.9":
-  version "4.13.9"
-  resolved "https://registry.yarnpkg.com/@layer0/vue-storefront/-/vue-storefront-4.13.9.tgz#47fca304979166c4569f54e68266ac3f7375655d"
-  integrity sha512-xVw7DRKaRO7/dXu1GuUDxXy5YP/DhdsIAhBtm9qUo60nEHjxtw2LB/Yl+PW9wxIXHvBHZCUVGejZHg+fNfZepA==
+"@layer0/vue-storefront@^4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@layer0/vue-storefront/-/vue-storefront-4.15.0.tgz#c28ffd90baf813fc57fbcb165712902b289d87a6"
+  integrity sha512-3nnSL26yN4qOtlHcq4AHkF1bw2CZJnPOiIjikfhskgTapriQ1T94EXwCIsPof5ljMQWfH3I+GcEhnKarkVMoRQ==
   dependencies:
-    "@layer0/apollo" "^4.13.9"
-    "@layer0/nuxt" "^4.13.9"
+    "@layer0/apollo" "^4.15.0"
+    "@layer0/nuxt" "^4.15.0"
     cross-spawn "^7.0.3"
     fs-extra "^8.1.0"
     jscodeshift "^0.13.1"
