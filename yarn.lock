@@ -2596,10 +2596,10 @@
     fs-extra "^8.1.0"
     jscodeshift "^0.13.1"
 
-"@layer0/vue@^4.13.9":
-  version "4.13.9"
-  resolved "https://registry.yarnpkg.com/@layer0/vue/-/vue-4.13.9.tgz#c85cfc5ebb78064356f367ae327656fee5a9e845"
-  integrity sha512-HWpqVVq23LHVZvpAU4OfpfOLIjRadlB+Mu75eLv7X/2eyox1ja8+lwbUpPFlf5Uf8vGvVHMGLTloX+b6SS4V4g==
+"@layer0/vue@^4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@layer0/vue/-/vue-4.15.0.tgz#574ee026c94728ef552d4594aa107307c3bf0880"
+  integrity sha512-jeucIl14KT7ORsHEeKxv7Fqk0BYn+pg7tWg1kJSTHhMRp/EW/QNVgWO4WhL0/do5yNp8xw8sXfD1P3XSmuFAsQ==
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
