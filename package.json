@@ -32,7 +32,7 @@
     "@layer0/apollo": "^4.13.9",
     "@layer0/cli": "^4.13.9",
     "@layer0/core": "^4.13.9",
-    "@layer0/devtools": "^4.13.9",
+    "@layer0/devtools": "^4.15.3",
     "@layer0/nuxt": "^4.13.9",
     "@layer0/prefetch": "^4.13.9",
     "@layer0/vue": "^4.13.9",
