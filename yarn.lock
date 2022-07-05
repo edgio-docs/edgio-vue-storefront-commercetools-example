@@ -2547,10 +2547,10 @@
     unixify "^1.0.0"
     uuid "^8.3.2"
 
-"@layer0/devtools@^4.13.9":
-  version "4.13.9"
-  resolved "https://registry.yarnpkg.com/@layer0/devtools/-/devtools-4.13.9.tgz#89bd670999a918c24eb0e166dda8f7b9214fd3c4"
-  integrity sha512-RU6KdrVhBcwzuU66TskH3u6MH9sZa1h/9c9SXv0R1lt6WdMDxyP+kM9Wp2zk43SoOe36CnmtWUrqNJVnoTvqwQ==
+"@layer0/devtools@^4.15.6":
+  version "4.15.6"
+  resolved "https://registry.yarnpkg.com/@layer0/devtools/-/devtools-4.15.6.tgz#fa0a969c822520ef4d5dd808c1d3d71e3b0c2284"
+  integrity sha512-onAzKolAivIb98CR9Fny5gTS6B171pnKrAFnd1YJdP5+9grBFP0pQ/PPeinGv87gty1jeNbFyrqEzfDaES+aKw==
   dependencies:
     clsx "^1.1.1"
     lodash "^4.17.20"
