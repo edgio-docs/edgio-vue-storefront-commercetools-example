@@ -2456,10 +2456,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@layer0/apollo@^4.13.9":
-  version "4.13.9"
-  resolved "https://registry.yarnpkg.com/@layer0/apollo/-/apollo-4.13.9.tgz#dcf6a88a4441c613e45be318c5a11c521364b85e"
-  integrity sha512-8B45dfw38wxrcwAcndOxNqF96AV1oH2xhqrZHAJapYgMgrHrjTjPPKq1XOZjrkQ2ABF0DR3UuAAlIqV5FwoGsA==
+"@layer0/apollo@^4.13.9", "@layer0/apollo@^4.18.10":
+  version "4.18.10"
+  resolved "https://registry.yarnpkg.com/@layer0/apollo/-/apollo-4.18.10.tgz#28d923732a7a7b68402db6291616b1535ad7f0c1"
+  integrity sha512-5P5dyy4eLVNFUHi4gPn9hAZIMjn6mfag8fLJxOeDpL/VDkpu8dC796qkkQO3/h+aLmxmnh+hm4gAUkZWR9XYVw==
   dependencies:
     apollo-link-context "^1.0.20"
     apollo-link-http "^1.5.17"
