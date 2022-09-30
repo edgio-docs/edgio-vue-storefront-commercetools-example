@@ -6,7 +6,7 @@ import { CacheOptions } from "@layer0/core/router/CacheOptions";
 import { nuxtRoutes, renderNuxtPage } from "@layer0/nuxt";
 import { decompressRequest } from "@layer0/apollo";
 
-const HTML: CacheOptions = {
+const HTMLCacheOptions: CacheOptions = {
   edge: {
     maxAgeSeconds: 60 * 60 * 24,
     staleWhileRevalidateSeconds: 60 * 60 * 24,
@@ -29,12 +29,12 @@ const APICacheOptions: CacheOptions = {
 
 function cacheHTML({ cache, removeUpstreamResponseHeader }: ResponseWriter) {
   removeUpstreamResponseHeader("set-cookie");
-  cache(HTML);
+  cache(HTMLCacheOptions);
 }
 
 function cacheAPI({ cache, removeUpstreamResponseHeader }: ResponseWriter) {
   removeUpstreamResponseHeader("set-cookie");
-  cache(API);
+  cache(APICacheOptions);
 }
 
 export default new Router()
