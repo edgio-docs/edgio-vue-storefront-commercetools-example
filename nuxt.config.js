@@ -67,7 +67,7 @@ export default {
     "@nuxtjs/style-resources",
     // to core soon
     "@nuxtjs/pwa",
-    ["@layer0/nuxt/module", { layer0SourceMaps: true }],
+    ["@edgio/nuxt/module", { edgioSourceMaps: true }],
     [
       "@vue-storefront/nuxt",
       {

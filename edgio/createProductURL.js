@@ -1,4 +1,4 @@
-import { createApolloURL } from '@layer0/apollo'
+import { createApolloURL } from '@edgio/apollo'
 import { apolloClient, getSettings } from '@vue-storefront/commercetools-api'
 import { buildProductWhere } from '@vue-storefront/commercetools-api/src/helpers/search'
 import defaultQuery from '@vue-storefront/commercetools-api/src/api/getProduct/defaultQuery'
@@ -7,7 +7,7 @@ import defaultQuery from '@vue-storefront/commercetools-api/src/api/getProduct/d
 
 Builds a query URL for apollo to obtain product data during prefetching
 
-You can wrap product links to prefetch with the @layer0/vue `Prefetch` component.
+You can wrap product links to prefetch with the @edgio/vue `Prefetch` component.
 
 e.g.
 

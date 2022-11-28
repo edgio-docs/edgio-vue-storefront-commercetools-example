@@ -1,4 +1,4 @@
-import { createApolloURL } from '@layer0/apollo'
+import { createApolloURL } from '@edgio/apollo'
 import { apolloClient, getSettings } from '@vue-storefront/commercetools-api'
 import defaultQuery from '@vue-storefront/commercetools-api/src/api/getCategory/defaultQuery'
 
@@ -21,7 +21,7 @@ const buildCategoryWhere = (search, acceptLanguage) => {
 
 Builds a query URL for apollo to obtain category data during prefetching.
 
-You can wrap category links to prefetch with the @layer0/vue `Prefetch` component.
+You can wrap category links to prefetch with the @edgio/vue `Prefetch` component.
 
 e.g.
 
